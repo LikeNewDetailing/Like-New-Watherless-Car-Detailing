@@ -819,7 +819,12 @@ body {
     width: 100%;
     max-width: none; /* Remove limite que espreme os cards */
   }
-  .hero-content h1 {
+ .hero {
+  height: 100vh;
+  background-attachment: scroll;
+}
+
+.hero-content h1 {
   font-size: 2rem;
 }
 
@@ -831,5 +836,6 @@ body {
   font-size: 0.95rem;
   padding: 0.8rem 1.8rem;
 }
+
 
 }
