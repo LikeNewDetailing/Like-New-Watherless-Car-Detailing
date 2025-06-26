@@ -823,13 +823,17 @@ body {
     width: 100%;
     max-width: none; /* Remove limite que espreme os cards */
   }
-  .hero-text-top h1 {
-  font-size: 1.8rem;
+  .hero-content h1 {
+  font-size: 2rem;
 }
 
-.hero-text-top p {
+.hero-content p {
   font-size: 1rem;
-  padding: 0 10px;
+}
+
+.hero-content .btn {
+  font-size: 0.95rem;
+  padding: 0.8rem 1.8rem;
 }
 
 }
