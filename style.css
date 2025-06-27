@@ -64,7 +64,6 @@ nav a:hover {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  max-width: 100%;
 }
 
 .hero-image {
@@ -75,6 +74,7 @@ nav a:hover {
   height: 100vh;
   object-fit: cover;
   z-index: 1;
+  max-width: 100%;
 }
 
 /* Fades superior e inferior */
