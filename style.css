@@ -58,14 +58,20 @@ nav a:hover {
 
 /* ==================== HERO ==================== */
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Espaço entre topo (texto) e fundo (botão) */
   align-items: center;
-  background-color: transparent;
-  padding-top: 100px;
-  padding-bottom: 2rem;
+  height: 100vh; /* Ocupa toda a altura da tela */
+  background-image: url('img/hero-banner.jpg'); /* coloque o caminho real aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem 1rem;
   text-align: center;
 }
+
 
 .hero-banner {
   width: 100%;
