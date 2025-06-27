@@ -57,49 +57,45 @@ nav a:hover {
 }
 
 /* ==================== HERO ==================== */
+/* ==================== HERO ==================== */
 .hero {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Espaço entre topo (texto) e fundo (botão) */
-  align-items: center;
-  height: 100vh; /* Ocupa toda a altura da tela */
-  background-image: url('img/hero-banner.jpg'); /* coloque o caminho real aqui */
+  height: 100vh; /* altura total da tela */
+  background-image: url('img/top-banner.png'); /* ajuste o caminho se necessário */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* posiciona texto no topo e botão no fundo */
+  padding: 3rem 1rem;
   text-align: center;
+  color: white;
 }
 
-
-.hero-banner {
-  width: 100%;
-  max-height: 500px;
-  object-fit: cover;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .hero-text h1 {
   font-size: 2.8rem;
   margin: 0;
-  color: #ffffff;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
 .hero-text p {
   font-size: 1.2rem;
-  color: #f0f0f0;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   text-shadow: 0 1px 3px rgba(0,0,0,0.4);
 }
 
-
 .hero-button {
-  margin: 0;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .hero-button .btn {
