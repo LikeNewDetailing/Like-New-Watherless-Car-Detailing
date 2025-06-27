@@ -60,18 +60,22 @@ nav a:hover {
 /* ==================== HERO ==================== */
 .hero {
   position: relative;
-  height: 100vh; /* altura total da tela */
-  background-image: url('img/top-banner.png'); /* ajuste o caminho se necessário */
+  height: 100vh;
+  background-image: url('img/Top-Banner.png'); /* ou o nome correto da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* posiciona texto no topo e botão no fundo */
-  padding: 3rem 1rem;
+  justify-content: space-between;
+  padding: 6rem 1rem 2rem; /* top = espaço pro header */
   text-align: center;
   color: white;
 }
+.hero {
+  background-color: red; /* remova depois */
+}
+
 
 .hero-content {
   display: flex;
