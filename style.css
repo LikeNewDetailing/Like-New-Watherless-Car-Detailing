@@ -59,32 +59,40 @@ nav a:hover {
 /* ==================== HERO ==================== */
 .hero {
   position: relative;
-  width: 100vw;  /* 100% da largura da tela */
-  height: 100vh;  /* 100% da altura da tela */
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* camada escura opcional */
+  z-index: 2;
+}
 
 .hero-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200%;
-  object-fit: cover;  /* Isso vai garantir que a imagem cubra toda a área sem distorcer */
+  height: 100%; /* corrigido aqui */
+  object-fit: cover;
   z-index: 1;
-  max-width: 100%;
 }
 
-/* Fades superior e inferior */
+/* Resto igual */
 .hero-fade-top,
 .hero-fade-bottom {
   position: absolute;
   width: 100%;
   height: 100px;
-  z-index: 2;
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -98,10 +106,9 @@ nav a:hover {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
 }
 
-/* Overlay e estrutura hero */
 .hero-overlay {
   position: relative;
-  z-index: 3;
+  z-index: 4;
   height: 100%;
   width: 100%;
   display: flex;
