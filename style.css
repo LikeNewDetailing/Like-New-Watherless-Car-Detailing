@@ -61,8 +61,8 @@ nav a:hover {
 .hero {Add commentMore actions
   position: relative;
   height: 100vh;
-  background-image: url('img/Top-Banner.png'); /* ou o nome correto da sua imagem */
-  background-image: url('img/Top-Banner.png'); /* ou o nome correto da sua imagem */
+  background-image: url('img/top-banner.png'); /* ou o nome correto da sua imagem */
+  background-image: url('img/top-banner.png'); /* ou o nome correto da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
