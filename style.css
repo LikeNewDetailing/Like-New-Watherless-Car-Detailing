@@ -60,43 +60,62 @@ nav a:hover {
 .hero {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
+  background-image: url('img/top-banner.png'); /* caminho da imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding: 100px 20px 60px; /* espaço pro header fixo e botão */
   text-align: center;
-  margin-top: 100px; /* espaço para o header fixo */
+  overflow: hidden;
 }
 
-.hero-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.hero-text {
+/* Gradiente superior e inferior */
+.hero::before,
+.hero::after {
+  content: '';
   position: absolute;
-  top: 20%;
-  color: #424f4d;
-  z-index: 2;
-  padding: 0 20px;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.hero-text h1 {
-  font-size: 2.4rem;
+.hero::before {
+  top: 0;
+  background: linear-gradient(to bottom, white 0%, transparent 100%);
+}
+
+.hero::after {
+  bottom: 0;
+  background: linear-gradient(to top, white 0%, transparent 100%);
+}
+
+/* Texto sobre a imagem */
+.hero-text {
+  z-index: 2;
+  color: #424f4d;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
   margin-bottom: 10px;
   font-weight: 700;
 }
 
-.hero-text p {
-  font-size: 1.1rem;
+.hero p {
+  font-size: 1.2rem;
   color: #6b7b79;
 }
 
+/* Botão */
 .hero-button {
-  position: absolute;
-  bottom: 10%;
   z-index: 2;
 }
 
@@ -122,9 +141,10 @@ nav a:hover {
 
 .hero .btn:hover {
   background-color: #f0f0f0;
-  color: #333;
-  border-color: #333;
+  color: #333333;
+  border-color: #333333;
 }
+
 
 /* ==================== SECTION ==================== */
 section {
@@ -828,4 +848,23 @@ body {
     width: 100%;
     max-width: none; /* Remove limite que espreme os cards */
   }
+
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 120px 16px 40px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-button {
+    margin-bottom: 20px;
+  }
 }
+
