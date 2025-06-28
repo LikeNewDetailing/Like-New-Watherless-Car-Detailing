@@ -58,14 +58,20 @@ nav a:hover {
 
 /* ==================== HERO ==================== */
 /* ==================== HERO ==================== */
-.hero {
-  background-image: url('img/top-banner.jpg'); /* ou .png se for o formato correto */
+.hero {Add commentMore actions
+  position: relative;
+  height: 100vh;
+  background-image: url('img/Top-Banner.png'); /* ou o nome correto da sua imagem */
+  background-image: url('img/Top-Banner.png'); /* ou o nome correto da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 120px 40px;
-  color: white; /* se precisar de contraste */
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem 1rem 2rem; /* top = espaço pro header */
+  text-align: center;More actions
+  color: white;
 }
 
 
