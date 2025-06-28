@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fefefe;
+  background: white;
   color: #222;
   scroll-behavior: smooth;
   line-height: 1.6;
@@ -72,10 +72,6 @@ nav a:hover {
   text-align: center;
   color: white;
 }
-.hero {
-  background-color: red; /* remova depois */
-}
-
 
 .hero-content {
   display: flex;
