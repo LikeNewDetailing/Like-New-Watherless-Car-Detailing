@@ -61,7 +61,7 @@ nav a:hover {
 .hero {
   position: relative;
   height: 100vh;
-  background-image: url('img/Top-Banner.png'); /* ou o nome correto da sua imagem */
+  background-image: src= "img/Top-Banner.png"; /* ou o nome correto da sua imagem */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
