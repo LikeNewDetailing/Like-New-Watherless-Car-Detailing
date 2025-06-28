@@ -56,13 +56,12 @@ nav a:hover {
   color: #00d4ff;
 }
 
-/* ==================== HERO ==================== */
-/* ==================== HERO ==================== */
+/* ==================== HERO SECTION ==================== */
 .hero {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url('img/top-banner.png'); /* use a extensão correta */
+  background-image: url('img/top-banner.jpg'); /* ou .png */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,59 +70,119 @@ nav a:hover {
   justify-content: center;
   text-align: center;
   padding: 60px 20px;
-  color: white;
   z-index: 1;
   overflow: hidden;
 }
 
+/* Gradiente em cima e embaixo */
 .hero::before,
 .hero::after {
   content: '';
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 120px;
   z-index: 2;
 }
 
 .hero::before {
   top: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+  background: linear-gradient(to bottom, white 0%, transparent 100%);
 }
 
 .hero::after {
   bottom: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  background: linear-gradient(to top, white 0%, transparent 100%);
 }
 
+/* Conteúdo centralizado */
 .hero-content {
   position: relative;
   z-index: 3;
   max-width: 900px;
+  padding: 20px;
 }
 
+/* Título */
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
+  color: #333333; /* cinza escuro */
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
+/* Subtítulo */
 .hero p {
-  font-size: 1.25rem;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  color: #999999; /* cinza claro */
+  margin-bottom: 32px;
 }
 
+/* Botão */
 .hero .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 12px 24px;
   font-size: 1rem;
-  background-color: #00d4ff;
-  color: #fff;
-  border-radius: 8px;
+  background-color: #ffffff;
+  color: #333333;
+  border: 2px solid #333333;
+  border-radius: 30px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero .btn::before {
+  content: '➤';
+  font-size: 1rem;
 }
 
 .hero .btn:hover {
-  background-color: #0072ff;
+  background-color: #f0f0f0;
+  color: #000000;
+  border-color: #000000;
+}
+
+/* ==================== RESPONSIVO ==================== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero .btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .hero::before,
+  .hero::after {
+    height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .hero .btn {
+    font-size: 0.9rem;
+    padding: 10px 18px;
+  }
 }
 
 /* ==================== SECTION ==================== */
