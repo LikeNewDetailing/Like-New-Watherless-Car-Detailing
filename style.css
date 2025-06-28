@@ -72,6 +72,12 @@ nav a:hover {
   text-align: center;
   overflow: hidden;
 }
+.hero {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 
 /* Gradiente superior e inferior */
 .hero::before,
@@ -852,7 +858,7 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 120px 16px 40px;
+    padding: 120px 0 40px; /* remove padding lateral */
   }
 
   .hero h1 {
