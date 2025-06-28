@@ -126,26 +126,6 @@ nav a:hover {
   border-color: #333;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-  .hero-text {
-    top: 15%;
-  }
-
-  .hero-text h1 {
-    font-size: 1.6rem;
-  }
-
-  .hero-text p {
-    font-size: 1rem;
-  }
-
-  .hero-button {
-    bottom: 8%;
-  }
-}
-
-
 /* ==================== SECTION ==================== */
 section {
   padding: 80px 20px;
