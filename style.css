@@ -61,7 +61,7 @@ nav a:hover {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background-image: url('img/top-banner.jpg'); /* ou .png */
+  background-image: url('img/top-banner.png'); /* ou .png */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
