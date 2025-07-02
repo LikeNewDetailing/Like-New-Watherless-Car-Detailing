@@ -945,16 +945,33 @@ body {
 }
 
 /* Mostra o botão só em mobile */
+.toggle-details {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .toggle-details {
-    display: block;
-    margin-top: 12px;
-    background: transparent;
-    color: #0072ff;
-    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: #424f4d;
+    border: 2px solid #424f4d;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
     cursor: pointer;
-    font-weight: 500;
-    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+  }
+
+  .toggle-details:hover {
+    background-color: #f0f0f0;
+    color: #333333;
+    border-color: #333333;
   }
 
   .card .card-details {
@@ -965,5 +982,6 @@ body {
     display: block;
   }
 }
+
 
 
