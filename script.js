@@ -62,4 +62,14 @@ function toggleMenu() {
     });
   });
 </script>
+<script>
+  document.querySelectorAll('.toggle-details').forEach(function(btn) {
+    btn.addEventListener('click', function () {
+      const card = this.closest('.card');
+      card.classList.toggle('show-details');
+      this.textContent = card.classList.contains('show-details') ? 'Hide Details' : 'Show Details';
+    });
+  });
+</script>
+
 
