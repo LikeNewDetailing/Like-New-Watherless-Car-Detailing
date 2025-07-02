@@ -939,4 +939,31 @@ body {
     display: none;
   }
 }
+/* Esconde o botão por padrão em desktop */
+.toggle-details {
+  display: none;
+}
+
+/* Mostra o botão só em mobile */
+@media (max-width: 768px) {
+  .toggle-details {
+    display: block;
+    margin-top: 12px;
+    background: transparent;
+    color: #0072ff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .card .card-details {
+    display: none;
+  }
+
+  .card.show-details .card-details {
+    display: block;
+  }
+}
+
 
