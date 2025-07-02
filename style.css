@@ -910,4 +910,33 @@ body {
     right: 20px;
   }
 }
+@media (max-width: 768px) {
+  .card .card-details {
+    display: none;
+  }
+
+  .card.show-details .card-details {
+    display: block;
+  }
+
+  .toggle-details {
+    margin-top: 12px;
+    background: transparent;
+    color: #0072ff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
+  .toggle-details {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .toggle-details {
+    display: none;
+  }
+}
 
