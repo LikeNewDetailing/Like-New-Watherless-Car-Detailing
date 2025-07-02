@@ -720,17 +720,14 @@ form button:hover {
   font-weight: 500;
 }
 
-.contact-item i {
-  margin-right: 6px;
-  background: linear-gradient(to right, #00d4ff, #0072ff);-webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.contact-item i,
+.contact-item strong {
+  color: #424F4D;
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
 }
 
-.contact-item strong {
-  background: linear-gradient(to right, #00d4ff, #0072ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .separator {
   color: #ccc;
