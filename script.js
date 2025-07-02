@@ -53,3 +53,13 @@ function toggleMenu() {
   const nav = document.querySelector("header nav");
   nav.classList.toggle("active");
 }
+<script>
+  document.querySelectorAll('.toggle-details').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const card = this.closest('.card');
+      card.classList.toggle('show-details');
+      this.textContent = card.classList.contains('show-details') ? 'Hide Details' : 'Show Details';
+    });
+  });
+</script>
+
