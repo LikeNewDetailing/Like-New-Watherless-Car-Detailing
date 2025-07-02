@@ -545,5 +545,21 @@
     }, 6000);
   </script>
 
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll('.toggle-details');
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        const card = this.closest('.card');
+        card.classList.toggle('show-details');
+        this.textContent = card.classList.contains('show-details')
+          ? 'Hide Details'
+          : 'Show Details';
+      });
+    });
+  });
+</script>
+
+
   </body>
 </html>
