@@ -873,3 +873,8 @@ body {
   .hero-button {
     margin-bottom: 20px;
   }
+
+  .about-text {
+  text-align: justify;
+}
+
