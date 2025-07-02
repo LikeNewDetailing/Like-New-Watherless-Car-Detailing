@@ -876,10 +876,3 @@ body {
   .hero-button {
     margin-bottom: 20px;
   }
-
-   /* ==================== AJUSTES DE TEXTO PARA LEGIBILIDADE ==================== */
-
-/* Justificar todos os textos principais */
-p {
-  text-align: justify;
-}
