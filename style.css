@@ -1,4 +1,4 @@
-/* ==================== BASE ==================== */
+  /* ==================== BASE ==================== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 * {
@@ -982,6 +982,25 @@ body {
     display: block;
   }
 }
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover; /* mantém o estilo desktop */
+    background-position: center center; /* centraliza o carro na tela */
+    background-repeat: no-repeat;
+    height: 100vh; /* mantém altura proporcional */
+  }
+
+  .hero-text {
+    margin-top: 100px; /* ajusta o texto para não sobrepor a imagem */
+    padding: 0 15px; /* um respiro lateral no texto */
+  }
+
+  .hero-button {
+    margin-bottom: 40px; /* dá mais espaço para o botão */
+  }
+}
+
 
 
 
