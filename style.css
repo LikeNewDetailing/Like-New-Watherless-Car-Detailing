@@ -1001,6 +1001,33 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 0; /* remove espaço extra no mobile */
+  }
+
+  .hero-text {
+    margin-top: calc(120px + 10vh); /* empurra o texto para baixo do header */
+    padding: 0 20px;
+  }
+
+  .hero-button {
+    margin-bottom: 40px;
+  }
+
+  header {
+    position: absolute;
+    width: 100%;
+    background: transparent; /* deixa o header transparente sobre a imagem */
+    z-index: 10;
+  }
+}
+
+
 
 
 
