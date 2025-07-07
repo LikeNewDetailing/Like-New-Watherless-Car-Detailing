@@ -1088,6 +1088,79 @@ body {
   font-size: 0.9rem;
 }
 
+/* ============ MOBILE FIXES ============ */
+@media (max-width: 768px) {
+
+  /* Ajusta header fixo para não tampar imagem */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #fff; /* Cor sólida para o header */
+  }
+
+  /* Corrige hero (imagem) para começar abaixo do header */
+  .hero {
+    margin-top: 80px; /* altura do header */
+    height: auto; /* altura automática */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  /* Corrige menu hamburguer */
+  .menu {
+    display: block !important; /* força o menu aparecer */
+    z-index: 9999;
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  .menu.active ul {
+    display: block;
+    position: absolute;
+    top: 80px; /* abaixo do header */
+    width: 100%;
+    background: #fff;
+  }
+
+  /* Grid 2x2 para sessões e produtos */
+  .extra-service,
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .extra-service .card,
+  .products .product-card {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .products .product-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .products .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .products .buttons a {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+}
 
 
 
