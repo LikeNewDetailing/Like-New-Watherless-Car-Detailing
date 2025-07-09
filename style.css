@@ -739,22 +739,7 @@ form button:hover {
   margin: 0 auto;
   padding: 0 16px;
 }
-@media (max-width: 768px) {
-  /* Menu: de horizontal para vertical */
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
 
-  /* Banner: texto centralizado e imagem responsiva */
-  header .banner {
-    text-align: center;
-  }
-  header .banner img {
-    width: 100%;
-    height: auto;
-  }
 
   /* Cards (produtos, serviços): 2 por linha ou 1 por linha em celular */
   .cards-container {
@@ -794,66 +779,5 @@ body {
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-  body {
-    font-size: 15px;
-  }
-  h1 {
-    font-size: 1.8rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-}
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 1001;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background: white;
-    padding: 10px 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-
-  nav.active {
-    display: flex;
-  }
-
-  header {
-    align-items: flex-start;
-  }
-
-  .hero {
-    padding-top: 140px; /* aumenta o espaçamento para o menu não cobrir */
-  }
-}
-@media (max-width: 768px) {
-  .cards,
-  .extra-services,
-  #products .cards-container {
-    grid-template-columns: 2fr; /* UM POR LINHA no mobile */
-    gap: 20px;
-  }
-
-  .card,
-  .extra-card,
-  .product {
-    width: 100%;
-    max-width: none; /* Remove limite que espreme os cards */
-  }
 
 
