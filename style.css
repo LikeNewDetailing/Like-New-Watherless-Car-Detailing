@@ -125,7 +125,7 @@ nav a:hover {
 
 /* Botão */
 .hero-button {
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   z-index: 3;
 }
 
@@ -133,7 +133,7 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 12px;
+  padding: 10px 20px;
   font-size: 1.4rem;
   background-color: #ffffff;
   color: #424f4d;
