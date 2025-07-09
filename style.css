@@ -939,16 +939,12 @@ body {
     display: none;
   }
 }
-/* Esconde o botão por padrão em desktop */
+/* Esconde o botão no desktop por padrão */
 .toggle-details {
   display: none;
 }
 
-/* Mostra o botão só em mobile */
-.toggle-details {
-  display: none;
-}
-
+/* Mostra apenas em telas menores que 768px */
 @media (max-width: 768px) {
   .toggle-details {
     display: inline-flex;
@@ -973,7 +969,7 @@ body {
     color: #333333;
     border-color: #333333;
   }
-
+}
   .card .card-details {
     display: none;
   }
