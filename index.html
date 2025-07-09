@@ -55,24 +55,31 @@
 </section>
 
 <!-- About -->
-<section id="about">
-  <h2>About Us</h2>
-  <p class="about-text">
-    Eco-Friendly Car Detailing in Etobicoke – Serving Toronto and the GTA. At Like New, we specialize in high-quality, eco-friendly car detailing using advanced waterless technology. Proudly based in Etobicoke and serving all of Toronto, we help save thousands of liters of water while delivering top-tier results. From deep interior cleaning to paint correction and ceramic coating, we make your car look and feel like new — with sustainability at the core.
-  </p>
-</section>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Eco-Friendly Car Detailing in Etobicoke – Serving Toronto and GTA
+At Like New, we specialize in high-quality, eco-friendly car detailing in Etobicoke, proudly serving Toronto and surrounding areas. Using advanced waterless technology, we deliver exceptional results while saving thousands of liters of water. From deep interior cleaning to paint protection, engine bay detailing, and ceramic coating, our expert team ensures your car looks and feels like new. Whether you're in Etobicoke or anywhere in the GTA, trust Like New for premium, sustainable car detailing near you.
 
+</p>
   </section>
 
+  <!-- Services -->
   <section id="services">
-  <h2>Main Services</h2>
-  <div class="cards">
-
-    <!-- Interior -->
-    <div class="card">
-      <h3>Interior</h3>
-      <span>From $95</span>
-      <div class="card-details">
+    <h2>Main Services</h2>
+    <div class="cards">
+      <!-- Master -->
+      <div class="card most-popular">
+      <div class="badge">⭐ Most Popular</div>
+        <h3>Master</h3>
+        <ul>
+          <li>All services from the Interior package</li>
+          <li>All services from the Exterior package</li>
+        </ul>
+        <span>From $140</span>
+      </div>
+      <!-- Interior -->
+      <div class="card">
+        <h3>Interior</h3>
         <ul>
           <li>Full interior vacuum (including trunk and under seats)</li>
           <li>Carpet and seat shampoo</li>
@@ -88,15 +95,12 @@
           <li>Odor neutralizer treatment</li>
           <li>Optional air freshener</li>
         </ul>
+        <span>From $95</span>
       </div>
-      <button class="toggle-details">Show Details</button>
-    </div>
 
-    <!-- Exterior -->
-    <div class="card">
-      <h3>Exterior</h3>
-      <span>From $55</span>
-      <div class="card-details">
+      <!-- Exterior -->
+      <div class="card">
+        <h3>Exterior</h3>
         <ul>
           <li>Complete hand wash of the vehicle’s exterior</li>
           <li>Bug, tar, and bird dropping removal</li>
@@ -106,44 +110,24 @@
           <li>Exterior windows and mirrors cleaned streak-free</li>
           <li>Wax application for enhanced shine and protection</li>
         </ul>
+        <span>From $55</span>
       </div>
-      <button class="toggle-details">Show Details</button>
-    </div>
 
-    <!-- Master -->
-    <div class="card most-popular">
-      <div class="badge">⭐ Most Popular</div>
-      <h3>Master</h3>
-      <span>From $140</span>
-      <div class="card-details">
-        <ul>
-          <li>All services from the Interior package</li>
-          <li>All services from the Exterior package</li>
-        </ul>
-      </div>
-      <button class="toggle-details">Show Details</button>
-    </div>
-
-    <!-- Standard -->
-    <div class="card">
-      <h3>Standard</h3>
-      <span>From $285</span>
-      <div class="card-details">
+      <!-- Standard -->
+      <div class="card">
+        <h3>Standard</h3>
         <ul>
           <li>Everything from the Master Package</li>
           <li>Engine bay detailing</li>
           <li>Exterior glass coating (repels water and improves visibility)</li>
           <li>Paint sealant application (longer-lasting protection and enhanced gloss)</li>
         </ul>
+        <span>From $285</span>
       </div>
-      <button class="toggle-details">Show Details</button>
-    </div>
 
-    <!-- Paint Correction + Ceramic Coating -->
-    <div class="card">
-      <h3>Paint Correction + Ceramic Coating</h3>
-      <span>From $400</span>
-      <div class="card-details">
+      <!-- Paint Correction -->
+      <div class="card">
+        <h3>Paint Correction + Ceramic Coating</h3>
         <ul>
           <li>Everything in the Master Package</li>
           <li>1 to 3 stages of paint correction</li>
@@ -151,15 +135,12 @@
           <li>3-year ceramic coating application</li>
           <li>Deep gloss, hydrophobic effect, and UV resistance</li>
         </ul>
+        <span>From $400</span>
       </div>
-      <button class="toggle-details">Show Details</button>
-    </div>
 
-    <!-- Premium -->
-    <div class="card">
-      <h3>Premium</h3>
-      <span>From $470</span>
-      <div class="card-details">
+      <!-- Premium -->
+      <div class="card">
+        <h3>Premium</h3>
         <ul>
           <li>Everything in the Standard Package</li>
           <li>1 to 3 stages of paint correction</li>
@@ -167,13 +148,10 @@
           <li>3-year ceramic coating</li>
           <li>Long-lasting protection with intense gloss, water beading, and ease of maintenance</li>
         </ul>
+        <span>From $470</span>
       </div>
-      <button class="toggle-details">Show Details</button>
     </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- Extras -->
   <section id="extras">
@@ -544,22 +522,6 @@
       nextReview();
     }, 6000);
   </script>
-
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll('.toggle-details');
-    buttons.forEach(button => {
-      button.addEventListener('click', function () {
-        const card = this.closest('.card');
-        card.classList.toggle('show-details');
-        this.textContent = card.classList.contains('show-details')
-          ? 'Hide Details'
-          : 'Show Details';
-      });
-    });
-  });
-</script>
-
 
   </body>
 </html>
