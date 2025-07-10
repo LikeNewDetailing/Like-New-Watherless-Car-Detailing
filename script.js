@@ -84,5 +84,19 @@ document.querySelectorAll('.btn-toggle-details').forEach(button => {
   });
 });
 
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    const toggleBtn = document.querySelector('.menu-toggle');
+    nav.classList.toggle('show');
+
+    // Alternar entre ☰ e ✕
+    if (toggleBtn.textContent === "☰") {
+      toggleBtn.textContent = "✕";
+    } else {
+      toggleBtn.textContent = "☰";
+    }
+  }
+</script>
 
 
