@@ -113,10 +113,12 @@ nav a:hover {
 }
 
 .hero-text {
+  margin-top: 40px;
   z-index: 3;
   color: #424f4d;
   max-width: 900px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 20px;
 }
 
@@ -131,8 +133,9 @@ nav a:hover {
   color: #424f4d;
 }
 
+/* Botão */
 .hero-button {
-  margin-top: 20px;
+  margin-bottom: 60px;
   z-index: 3;
 }
 
@@ -149,6 +152,11 @@ nav a:hover {
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
+}
+
+.hero .btn::before {
+  content: '➤';
+  font-size: 1rem;
 }
 
 .hero .btn:hover {
