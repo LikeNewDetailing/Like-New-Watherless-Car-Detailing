@@ -524,13 +524,14 @@ At Like New, we specialize in high-quality, eco-friendly car detailing in Etobic
     }, 6000);
   </script>
 
-  <script>
+ <script>
   function toggleMenu() {
     const nav = document.querySelector('nav');
     const toggleBtn = document.querySelector('.menu-toggle');
     nav.classList.toggle('show');
+    toggleBtn.classList.toggle('open');
 
-    // Alternar entre ☰ e ✕
+    // Alternar ícone
     if (toggleBtn.textContent === "☰") {
       toggleBtn.textContent = "✕";
     } else {
@@ -538,6 +539,7 @@ At Like New, we specialize in high-quality, eco-friendly car detailing in Etobic
     }
   }
 </script>
+
 
 
 
