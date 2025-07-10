@@ -866,3 +866,32 @@ body {
   text-decoration: underline;
 }
 
+/* Grid 2x2 no mobile */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .card ul.card-details {
+    display: none; /* Esconde detalhes por padrão */
+  }
+
+  .card.active ul.card-details {
+    display: block; /* Mostra quando ativo */
+  }
+
+  .btn-toggle-details {
+    display: block;
+    margin: 10px 0;
+    background: none;
+    border: none;
+    color: #00d4ff;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 0.95rem;
+  }
+}
+
+
