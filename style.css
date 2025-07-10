@@ -20,7 +20,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  background: white;
+  background: #ffffff;
   padding: 15px 40px;
   display: flex;
   justify-content: space-between;
@@ -29,31 +29,74 @@ header {
   z-index: 1000;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
 .logo img {
-  height: 82px;
+  height: 70px;
 }
 
 nav {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 nav a {
   text-decoration: none;
   color: #424f4d;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
   color: #00d4ff;
+}
+
+.contact-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 1rem;
+  color: #424f4d;
+}
+
+.contact-info .separator {
+  color: #ccc;
+}
+
+/* Hamburger Button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #424f4d;
+}
+
+/* ==================== MOBILE ==================== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 /* ==================== HERO SECTION ==================== */
