@@ -40,12 +40,7 @@ header {
   font-size: 2rem;
   cursor: pointer;
   color: #424f4d;
-  transition: transform 0.3s ease;
   z-index: 1100;
-}
-
-.menu-toggle.open {
-  transform: rotate(90deg);
 }
 
 nav {
@@ -110,6 +105,7 @@ nav a:hover {
     display: none;
   }
 }
+
 
 
 /* ==================== HERO SECTION ==================== */
