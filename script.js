@@ -77,6 +77,12 @@ const menu = document.querySelector('.menu');
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
 });
+document.querySelectorAll('.btn-toggle-details').forEach(button => {
+  button.addEventListener('click', () => {
+    button.parentElement.classList.toggle('active');
+    button.textContent = button.parentElement.classList.contains('active') ? 'Ver menos' : 'Ver mais';
+  });
+});
 
 
 
