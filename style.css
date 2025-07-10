@@ -794,23 +794,24 @@ body {
 }
 
 @media (max-width: 768px) {
+  @media (max-width: 768px) {
   nav {
     display: none;
     flex-direction: column;
-    background: white;
     position: absolute;
-    top: 70px;
-    right: 0;
+    top: 70px; /* ajusta para abaixo do header */
+    left: 0;
     width: 100%;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 
   nav.show {
     display: flex;
-  }
-
-  .menu-toggle {
+     }
+  
+ .menu-toggle {
     display: block;
   }
 }
@@ -896,8 +897,9 @@ body {
 
 @media (max-width: 768px) {
   .hero {
-    height: 70vh; /* reduz altura no celular */
-    background-position: center top;
+    height: 70vh; /* reduz altura */
+    background-size: cover;
+    background-position: center;
   }
 
   .hero h1 {
