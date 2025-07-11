@@ -967,3 +967,35 @@ body {
     padding: 8px 16px;
   }
 }
+#about {
+  max-width: 900px; /* limita a largura para centralizar melhor */
+  margin: 0 auto; /* centraliza horizontalmente */
+  padding: 40px 20px; /* espaçamento interno */
+  text-align: center; /* centraliza o título */
+}
+
+#about h2 {
+  font-size: 2.2rem; /* aumenta o tamanho do título */
+  margin-bottom: 20px; /* espaço abaixo do título */
+  color: #0072ff; /* cor da marca */
+}
+
+#about p {
+  text-align: justify; /* texto justificado */
+  font-size: 1.1rem; /* tamanho de fonte legível */
+  line-height: 1.8; /* aumenta o espaçamento entre linhas */
+  color: #333; /* cor do texto */
+}
+
+@media (max-width: 768px) {
+  #about {
+    padding: 30px 15px; /* reduz o padding no mobile */
+  }
+  #about h2 {
+    font-size: 1.8rem; /* título menor no mobile */
+  }
+  #about p {
+    font-size: 1rem; /* texto menor no mobile */
+  }
+}
+
