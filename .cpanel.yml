@@ -3,4 +3,4 @@ deployment:
   tasks:
     # 1) Define o destino (ajuste o usuário, se necessário)
     - export DEPLOYPATH=/home/xgw4i9dv5kib/public_html
-        - /bin/cp -R * $DEPLOYPATH
+        /bin/mkdir -p "$DEPLOYPATH"
