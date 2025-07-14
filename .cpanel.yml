@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    # 1) Define o destino (ajuste o usuário, se necessário)
+    - export DEPLOYPATH=/home/xgw4i9dv5kib/public_html
+
+    # 2) Sincroniza repo → public_html
+    #    --delete           : remove do destino o que não existir mais no repo
+    #    --exclude          : evita copiar .git e este .cpanel.yml
+    #    -a (archive)       : preserva permissões, datas e links
+    #    -v (verbose)       : log no deploy-track do cPanel
+    - /usr/bin/rsync -av --delete --exclude=".git/" --exclude=".cpanel.yml" ./ "$DEPLOYPATH"
