@@ -982,14 +982,14 @@ body {
 #about h2 {
   font-size: 2.2rem; /* aumenta o tamanho do título */
   margin-bottom: 20px; /* espaço abaixo do título */
-  color: #0072ff; /* cor da marca */
+  color: #424f4d; /* cor da marca */
 }
 
 #about p {
   text-align: justify; /* texto justificado */
   font-size: 1.1rem; /* tamanho de fonte legível */
   line-height: 1.8; /* aumenta o espaçamento entre linhas */
-  color: #333; /* cor do texto */
+  color: #424f4d; /* cor do texto */
 }
 
 @media (max-width: 768px) {
